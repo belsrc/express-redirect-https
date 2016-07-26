@@ -30,9 +30,8 @@ module.exports = function(options) {
         return response.status(403).send(opts.message);
       }
 
-      let httpsPort = opts.httpsPort || 443;
       let original = urlParse(request.protocol + '://' + request.header('Host') + request.originalUrl);
-      let url = 'https://' +  original.hostname + (httpsPort == 443 ? '' : (':' + httpsPort)) + request.originalUrl;
+      let url = 'https://' +  original.hostname + (opts.httpsPort == 443 ? '' : (':' + opts.httpsPort)) + request.originalUrl;
 
       return response.redirect(301, url);
     }
