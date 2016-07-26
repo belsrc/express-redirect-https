@@ -10,16 +10,16 @@ $ npm install --save express-redirect-https
 
 ### Options
 
-###### httpsPort
+##### httpsPort
 Defaults to `443`. The `https://` port to use in the redirect.
 
-###### message
+##### message
 Defaults to `Use HTTPS when submitting data`. The message passed with the `403` when submitting data over `http://`.
 
-###### allowProtoHeader
+##### allowProtoHeader
 Defaults to `false`. Whether or not to allow the `x-forwarded-proto` header. This header it typically set by reverse proxies (or a load balancer).
 
-###### allowAzureHeader
+##### allowAzureHeader
 Defaults to `false`. Whether or not to allow the `x-arr-ssl` header. Like above but used by Azure.
 
 
