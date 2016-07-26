@@ -1,0 +1,28 @@
+{
+  "name": "express-redirect-https",
+  "version": "0.1.0",
+  "description": "Redirects requests from HTTP to HTTPS in Express",
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha --reporter spec --ui tdd --recursive test"
+  },
+  "author": "Bryan Kizer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/belsrc/express-redirect-https.git"
+  },
+  "keywords": [
+    "ssl",
+    "tls",
+    "https",
+    "express",
+    "redirect"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/belsrc/express-redirect-https/issues"
+  },
+  "homepage": "https://github.com/belsrc/express-redirect-https#readme",
+  "main": "index.js",
+  "devDependencies": {},
+  "dependencies": {}
+}
