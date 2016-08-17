@@ -3,7 +3,7 @@
 Simple middleware that redirects `GET` and `HEAD` requests to `https://` and sends a `403` for `POST`, `PUT`, `DELETE`, etc.
 
 ### Install
-
+**WARNING: Currently not on NPM, finishing test cases**
 ``` bash
 $ npm install --save express-redirect-https
 ```
