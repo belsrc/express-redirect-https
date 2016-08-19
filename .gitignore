@@ -1,0 +1,12 @@
+logs
+*.log
+npm-debug.log*
+pids
+*.pid
+*.seed
+*.pid.lock
+lib-cov
+coverage
+node_modules
+.npm
+.node_repl_history

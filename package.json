@@ -15,7 +15,16 @@
     "tls",
     "https",
     "express",
-    "redirect"
+    "redirect",
+    "forward",
+    "forwarded",
+    "x-forwarded-proto",
+    "x-forwarded-ssl",
+    "x-real-proto",
+    "x-arr-ssl",
+    "RFC 7239",
+    "z-forwarded-proto",
+    "fastly-ssl"
   ],
   "license": "MIT",
   "bugs": {
@@ -23,6 +32,11 @@
   },
   "homepage": "https://github.com/belsrc/express-redirect-https#readme",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.14.0",
+    "mocha": "^2.5.3",
+    "supertest": "^1.2.0"
+  },
   "dependencies": {}
 }
