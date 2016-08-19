@@ -36,21 +36,21 @@ Defaults to `false`. Whether or not to allow the `fastly-ssl` header.
 
 ### Example
 ``` javascript
-var express = require('express');
-var app     = express();
-var http    = require('http');
-var https   = require('https');
-var fs      = require('fs');
+const express = require('express');
+const app     = express();
+const http    = require('http');
+const https   = require('https');
+const fs      = require('fs');
 
-var sslOptions  = {
+const sslOptions  = {
   key: fs.readFileSync('./ssl/privatekey.pem'),
   cert: fs.readFileSync('./ssl/certificate.pem')
 };
 
-var server    = http.createServer(app);
-var sslServer = https.createServer(sslOptions, app);
+const server    = http.createServer(app);
+const sslServer = https.createServer(sslOptions, app);
 
-let redirectHttps = require('express-redirect-https');
+const redirectHttps = require('express-redirect-https');
 let redirectOptions = {
   allowForwardForHeader: true,
   httpsPort: 3043
